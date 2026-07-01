@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>AURA16</h1>
+        </header>
+
+        <!-- Price Section -->
+        <section class="price-section">
+            <div class="price-box">
+                <h2>Price</h2>
+                <p class="price-amount">70000MMK</p>
+                <p class="price-desc">GSM-350,100%Cotton</p>
+            </div>
+        </section>
+
+        <!-- Shirt Images Section -->
+        <section class="images-section">
+            <h2>HEAVEN</h2>
+            <div class="shirt-images">
+                <div class="shirt-card">
+                    <img src="For adv.3 copy.png" alt="Shirt Front View">
+                    <p>Front</p>
+                </div>
+                <div class="shirt-card">
+                    <img src="For adv.1.png" alt="Shirt Back View">
+                    <p>Back</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Code Section -->
+        <section class="promo-section">
+            <h2>Get 10% Discount</h2>
+            <div class="promo-box">
+                <p>Enter Promo Code:</p>
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="promo-input" 
+                        placeholder="Enter code here..." 
+                        onkeypress="if(event.key === 'Enter' ) checkPromo()"
+                    >
+                    <button onclick="checkPromo()">Apply</button>
+                </div>
+                <p id="message" class="message"></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-overlay" class="overlay">
+        <div class="modal">
+            <h2>🎉 Success!</h2>
+            <p>Your verification code:</p>
+            <div class="code-box">
+                <span id="generated-code">XXXX-XXXX</span>
+            </div>
+            <p class="screenshot-warning">📸 Screenshot this code now!</p>
+            <p class="timer-text">Redirecting in <span id="countdown">10</span> seconds...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0e0101;
+    color: #333;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px 0;
+    background: rgb(127, 19, 19);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(190, 186, 186, 0.781);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #eae4e4;
+}
+
+/* Price Section */
+.price-section {
+    background: rgb(147, 25, 25);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(126, 124, 124, 0.673);
+    text-align: center;
+}
+
+.price-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f4f0f0;
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e4d5d3;
+    margin-bottom: 10px;
+}
+
+.price-desc {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Images Section */
+.images-section {
+    background: rgb(140, 19, 19);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(152, 149, 149, 0.833);
+}
+
+.images-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #e7e0e0;
+}
+
+.shirt-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shirt-card {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.shirt-card:hover {
+    transform: translateY(-5px);
+}
+
+.shirt-card img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.shirt-card p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Promo Section */
+.promo-section {
+    background: rgb(122, 20, 20);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.promo-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #efe7e7;
+}
+
+.promo-box {
+    background: #111111;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.promo-box p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #e7dfdf;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#promo-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#promo-input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    padding: 12px 25px;
+    background: #db2825;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.message {
+    min-height: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Modal */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal h2 {
+    font-size: 2rem;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.modal p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.code-box {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#generated-code {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.screenshot-warning {
+    font-size: 1.1rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.timer-text {
+    font-size: 0.95rem;
+    color: #777;
+    margin-top: 15px;
+}
+
+#countdown {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .price-amount {
+        font-size: 2.5rem;
+    }
+
+    .images-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .shirt-card img {
+        height: 280px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .modal {
+        padding: 25px;
+    }
+
+    #generated-code {
+        font-size: 1.8rem;
+    }
+}
